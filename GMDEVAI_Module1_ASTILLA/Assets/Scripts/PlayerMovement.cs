@@ -25,9 +25,9 @@ public class PlayerMovement : MonoBehaviour
         {
            Vector3 lookatPoint = hit.point;
 
-            lookatPoint += Vector3.up * 1.0f;
+           lookatPoint += Vector3.up * 1.0f;
 
-            transform.LookAt(lookatPoint);
+           transform.LookAt(lookatPoint);
         }
         if (Input.GetKey(KeyCode.W))
         {
