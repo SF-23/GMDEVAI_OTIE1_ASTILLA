@@ -20,8 +20,6 @@ public class FollowPath : MonoBehaviour
 
     Graph graph;
 
-    float minDistToPoint = 10.0f;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -61,67 +59,67 @@ public class FollowPath : MonoBehaviour
 
     public void GoToHelipad()
     {
-        graph.AStar(currentNode, wps[0]);
+        graph.AStar(currentNode, wps[0]);//
         currentWaypointIndex = 0;
     }
 
     public void GoToRuins()
     {
-        graph.AStar(currentNode, wps[6]);
+        graph.AStar(currentNode, wps[6]);//
         currentWaypointIndex = 0;
     }
 
     public void GoToFactory()
     {
-        graph.AStar(currentNode, wps[7]);
+        graph.AStar(currentNode, wps[7]);//
         currentWaypointIndex = 0;
     }
 
     public void GoToBarracks()
     {
-        graph.AStar(currentNode, wps[3]);
+        graph.AStar(currentNode, wps[3]);//
         currentWaypointIndex = 0;
     }
 
     public void GoToCommandCenter()
     {
-        graph.AStar(currentNode, wps[20]);
+        graph.AStar(currentNode, wps[20]);//
         currentWaypointIndex = 0;
     }
 
     public void GoToTwinMountains()
     {
-        graph.AStar(currentNode, wps[2]);
+        graph.AStar(currentNode, wps[2]);//
         currentWaypointIndex = 0;
     }
 
     public void GoToOilRefinery()
     {
-        graph.AStar(currentNode, wps[15]);
+        graph.AStar(currentNode, wps[15]);//
         currentWaypointIndex = 0;
     }
 
     public void GoToTankers()
     {
-        graph.AStar(currentNode, wps[16]);
+        graph.AStar(currentNode, wps[16]);//
         currentWaypointIndex = 0;
     }
 
     public void GoToRadar()
     {
-        graph.AStar(currentNode, wps[17]);
+        graph.AStar(currentNode, wps[17]);//
         currentWaypointIndex = 0;
     }
 
     public void GoToCP()
     {
-        graph.AStar(currentNode, wps[18]);
+        graph.AStar(currentNode, wps[18]);//
         currentWaypointIndex = 0;
     }
 
     public void GoToCenter()
     {
-        graph.AStar(currentNode, wps[21]);
+        graph.AStar(currentNode, wps[21]);//
         currentWaypointIndex = 0;
     }
 }
