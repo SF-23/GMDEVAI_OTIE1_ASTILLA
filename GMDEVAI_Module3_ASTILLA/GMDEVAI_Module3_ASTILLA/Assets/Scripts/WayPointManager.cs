@@ -36,7 +36,7 @@ public class WayPointManager : MonoBehaviour
                 graph.AddEdge(I.node1 , I.node2 );
                 if(I.dir == Link.direction.BI)
                 {
-                    graph.AddEdge(I.node1, I.node2);
+                    graph.AddEdge(I.node2, I.node1);
                 }
             }
         }

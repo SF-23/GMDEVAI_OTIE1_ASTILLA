@@ -48,7 +48,7 @@ public class FollowPath : MonoBehaviour
         if (currentWaypointIndex < graph.getPathLength())
         {
             goal = graph.getPathPoint(currentWaypointIndex).transform;
-            Vector3 lookAtGoal = new Vector3(goal.position.x, goal.position.y, goal.position.z);
+            Vector3 lookAtGoal = new Vector3(goal.position.x, transform.position.y, goal.position.z);
             Vector3 direction = lookAtGoal - this.transform.position;
             this.transform.root.rotation = Quaternion.Slerp(this.transform.rotation,
                                                              Quaternion.LookRotation(direction),
@@ -65,25 +65,25 @@ public class FollowPath : MonoBehaviour
 
     public void GoToRuins()
     {
-        graph.AStar(currentNode, wps[6]);//
+        graph.AStar(currentNode, wps[5]);//
         currentWaypointIndex = 0;
     }
 
     public void GoToFactory()
     {
-        graph.AStar(currentNode, wps[7]);//
+        graph.AStar(currentNode, wps[11]);//
         currentWaypointIndex = 0;
     }
 
     public void GoToBarracks()
     {
-        graph.AStar(currentNode, wps[3]);//
+        graph.AStar(currentNode, wps[8]);//
         currentWaypointIndex = 0;
     }
 
     public void GoToCommandCenter()
     {
-        graph.AStar(currentNode, wps[20]);//
+        graph.AStar(currentNode, wps[7]);//
         currentWaypointIndex = 0;
     }
 
@@ -95,31 +95,31 @@ public class FollowPath : MonoBehaviour
 
     public void GoToOilRefinery()
     {
-        graph.AStar(currentNode, wps[15]);//
+        graph.AStar(currentNode, wps[6]);//
         currentWaypointIndex = 0;
     }
 
     public void GoToTankers()
     {
-        graph.AStar(currentNode, wps[16]);//
+        graph.AStar(currentNode, wps[12]);//
         currentWaypointIndex = 0;
     }
 
     public void GoToRadar()
     {
-        graph.AStar(currentNode, wps[17]);//
+        graph.AStar(currentNode, wps[4]);//
         currentWaypointIndex = 0;
     }
 
     public void GoToCP()
     {
-        graph.AStar(currentNode, wps[18]);//
+        graph.AStar(currentNode, wps[3]);//
         currentWaypointIndex = 0;
     }
 
     public void GoToCenter()
     {
-        graph.AStar(currentNode, wps[21]);//
+        graph.AStar(currentNode, wps[9]);//
         currentWaypointIndex = 0;
     }
 }
